@@ -16,6 +16,9 @@ game = (a) =>{
 
     if(c==a){
         show.classList.remove("hide");
+        show.style.backgroundColor="white";
+        show.style.color="black";
+        show.style.display="inline";
         if(n==0) show.innerText="Draw, You both Choosed Rock";
         if(n==1) show.innerText="Draw, You both Choosed Paper";
         if(n==2) show.innerText="Draw, You both Choosed Scissor";
@@ -23,12 +26,18 @@ game = (a) =>{
 
     if((c=="Rock" && a=="Paper") || (c=="Scissor" && a=="Rock") || (c=="Paper" && a=="Scissor")){
         show.classList.remove("hide");
+        show.style.backgroundColor="green";
+        show.style.color="white";
+        show.style.display="inline";
         show.innerText="You Won, Computer Choosed "+c;
         user_score++; 
     }
 
     if((c=="Paper" && a=="Rock") || (c=="Rock" && a=="Scissor") || (c=="Scissor" && a=="Paper")){
         show.classList.remove("hide");
+        show.style.backgroundColor="red";
+        show.style.color="yellow";
+        show.style.display="inline";
         show.innerText="You Lost, Computer Choosed "+c;
         computer_score++;
     }  

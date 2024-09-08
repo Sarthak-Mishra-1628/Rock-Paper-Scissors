@@ -61,8 +61,10 @@ img{
     text-align: center;
     font-size: 30px;
     color: pink;
+    gap: 5px
 }
 
 .hide{
     display: none;
 }
+
